@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1A1A1A"
+    android:padding="20dp"
+    android:gravity="center_horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📺 TV Remote Server"
+        android:textColor="#FFD700"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● Stopped"
+        android:textColor="#FF4444"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="#2A2A2A"
+        android:layout_marginBottom="16dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Port: 9000"
+        android:textColor="#888888"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Server Start Karein"
+        android:backgroundTint="#FFD700"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Server Band Karein"
+        android:backgroundTint="#CC3333"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:enabled="false"
+        android:layout_marginBottom="20dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log:"
+        android:textColor="#888888"
+        android:textSize="12sp"
+        android:layout_marginBottom="4dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#111111">
+        <TextView
+            android:id="@+id/tvLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#00FF00"
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:padding="8dp" />
+    </ScrollView>
+</LinearLayout>
